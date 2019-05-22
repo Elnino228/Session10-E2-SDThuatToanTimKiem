@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phoneNumbers=['0351234567','0781236567','0331234467','0384567890','0651234588'];
+    let patt=/^[0][3][2-9][0-9]{7}$/;
+    let phoneNumbersViettel=[];
+    for (let i=0;i<phoneNumbers.length;i++){
+        if (patt.test(phoneNumbers[i])){
+            phoneNumbersViettel.push(phoneNumbers[i]);
+        }
+    }
+    console.log(phoneNumbersViettel);
+</script>
+</body>
+</html>
